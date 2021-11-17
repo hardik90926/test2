@@ -1,0 +1,32 @@
+.select_box__control{
+  border: 1px solid $dark-border-200;
+  color:$theme-body-font-color;
+  background-color: $dark-body-background;
+  .select_box__placeholder{
+    color:$theme-body-font-color;
+  }
+}
+
+.select_box__menu{
+  background-color: $dark-body-background;
+  border: 1px solid $dark-border-200;
+  border-radius:0 0 4px 4px;
+  box-shadow:$dark-box-shadow;
+  width: auto;
+  min-width: 200px;
+  .select_box__option{
+    background-color: transparent;
+    color:$theme-body-font-color;
+    &.select_box__option--is-focused{
+      background-color: $primary-color;
+      color: #fff;
+    }
+    &.select_box__option--is-hovered{
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}
+.select_box__single-value{
+  color: $theme-body-font-color; 
+ }

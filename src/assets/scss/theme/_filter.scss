@@ -1,0 +1,59 @@
+.filterDropdown{
+    position: absolute;
+    padding: 10px 15px;
+    background-color: $dark-dropdown;
+    z-index: 10;
+    min-width: 250px;
+    border-radius: 5px;
+    box-shadow: $dark-box-shadow;
+    .select_box__placeholder{
+        font-size: 12px;
+    }
+    .filterBox{
+        align-items: center;
+    }
+    .smallSelect{
+        width: 100px;
+        padding: 0 5px;
+    }
+    .bigSelect{
+        padding: 0 5px;
+        width: 200px;
+    }
+    .filterTitle{
+        color: $theme-body-font-color;
+        font-size: 14px;
+        margin-bottom: 14px;
+        opacity: 0.9;
+    }
+    .filterWrapper{
+        margin-bottom: 16px;
+    }
+    .filterBox{
+        margin-bottom: 10px;
+    }
+    .AddFilterBox{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $primary-color;
+        font-size: 14px;
+        text-transform: capitalize;
+        cursor: pointer;
+        svg{
+            width: 12px;
+            height: 12px;
+            font-size:14px;
+            fill: $primary-color;
+            margin-right: 6px;
+        }
+    }
+    .filterClose{
+        svg{
+            width: 12px;
+            height: 12px;
+            fill: $theme-body-font-color;
+        }
+    }
+}

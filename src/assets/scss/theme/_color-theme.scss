@@ -1,0 +1,117 @@
+
+body{
+    &.light{
+        // General variables
+        $theme-font-color: #1b252a;
+        $theme-body-font-color: #313131;
+        $theme-body-sub-title-color: #777777;
+        // Theme colors variables
+        $primary-color: orange;
+        $secondary-color: #1ea6ec;
+        $success-color: #22af47;
+        $info-color: #007bff;
+        $warning-color: #ff9f40;
+        $danger-color: #ff5370;
+        $light-color: #f6f7fb;
+        $semi-dark: #aaaaaa;
+        $light-semi-gray: #eff0f1;
+        $light-gray: #e8ebf2;
+        $dark-gray: #898989;
+        $dark-color: #2a3142;
+        $gray-60: #999999;
+        $transparent-color: transparent;
+        $auth-bg-color: #fafafa;
+        $light: #f6f6f6;
+        $light-text: #999;
+        $dark-primary: #448aff;
+        $pitch-color: #fe8a7d;
+        $flower-pink: #fb6d9d;
+        $dark-sky: #536dfe;
+        $color-scarpa: #4c5667;
+        $color-fiord: #455a64;
+        $black: #000;
+        $white: #fff;
+        $btn-bhome-bg-c: #ff6060;
+        $btn-search-bg-c: #ffd042;
+
+        //social colors
+        $fb: #50598e;
+        $twitter: #6fa2d8;
+        $google-plus: #c64e40;
+        $github: #8d6e63;
+        //error input color start
+        $light-body-bg-color: #f1f4fb;
+
+        // dark layout variables
+        $dark-body-background: #212121;
+        $dark-card-background: #282828;
+        $dark-border-100:#303030;
+        $dark-light-color:#fafafa;
+        $dark-small-font-color: #98a6ad;
+        $dark-box-shadow:0px 2px 8px 0px rgba(0, 0, 0, 0.65);
+        $dark-all-font-color: rgba(255, 255, 255, 0.85);
+        $sidebar-submenu-font-color: rgba(255, 255, 255, 0.7);
+        $dark-border-color: #374558;
+        $dark-editor-document: #2b2b2b;
+        $dark-hover-bg: #1c232f;
+        //General tag settings
+        $body-bg-color: rgba(246, 246, 246, 0.6);
+    }
+    &.dark-only{
+        // General variables
+        $theme-font-color: #1b252a;
+        $theme-body-font-color: #313131;
+        $theme-body-sub-title-color: #777777;
+        // Theme colors variables
+        $primary-color: orange;
+        $secondary-color: #1ea6ec;
+        $success-color: #22af47;
+        $info-color: #007bff;
+        $warning-color: #ff9f40;
+        $danger-color: #ff5370;
+        $light-color: #f6f7fb;
+        $semi-dark: #aaaaaa;
+        $light-semi-gray: #eff0f1;
+        $light-gray: #e8ebf2;
+        $dark-gray: #898989;
+        $dark-color: #2a3142;
+        $gray-60: #999999;
+        $transparent-color: transparent;
+        $auth-bg-color: #fafafa;
+        $light: #f6f6f6;
+        $light-text: #999;
+        $dark-primary: #448aff;
+        $pitch-color: #fe8a7d;
+        $flower-pink: #fb6d9d;
+        $dark-sky: #536dfe;
+        $color-scarpa: #4c5667;
+        $color-fiord: #455a64;
+        $black: #fafafa;
+        $white: #282828;
+        $btn-bhome-bg-c: #ff6060;
+        $btn-search-bg-c: #ffd042;
+
+        //social colors
+        $fb: #50598e;
+        $twitter: #6fa2d8;
+        $google-plus: #c64e40;
+        $github: #8d6e63;
+        //error input color start
+        $light-body-bg-color: #f1f4fb;
+
+        // dark layout variables
+        $dark-body-background: #212121;
+        $dark-card-background: #282828;
+        $dark-border-100:#303030;
+        $dark-light-color:#fafafa;
+        $dark-small-font-color: #98a6ad;
+        $dark-box-shadow:0px 2px 8px 0px rgba(0, 0, 0, 0.65);
+        $dark-all-font-color: rgba(255, 255, 255, 0.85);
+        $sidebar-submenu-font-color: rgba(255, 255, 255, 0.7);
+        $dark-border-color: #374558;
+        $dark-editor-document: #2b2b2b;
+        $dark-hover-bg: #1c232f;
+        //General tag settings
+        $body-bg-color: rgba(246, 246, 246, 0.6);
+    }
+}

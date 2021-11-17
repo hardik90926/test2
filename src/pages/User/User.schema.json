@@ -1,0 +1,286 @@
+{
+  "name": "user",
+  "customActions": [],
+  "allowAdd": true,
+  "allowEdit": true,
+  "allowDelete": true,
+  "allowView": true,
+  "attributes": [
+    {
+      "attrName": "_id",
+      "type": "String"
+    },
+    {
+      "attrName": "username",
+      "type": "String"
+    },
+    {
+      "attrName": "password",
+      "type": "String"
+    },
+    {
+      "attrName": "email",
+      "type": "String"
+    },
+    {
+      "attrName": "name",
+      "type": "String"
+    },
+    {
+      "attrName": "isActive",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "createdAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "updatedAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "addedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    },
+    {
+      "attrName": "updatedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    },
+    {
+      "attrName": "role",
+      "type": "Number",
+      "enum": {
+        "User": 2,
+        "Admin": 1
+      }
+    }
+  ],
+  "screenLayout": {
+    "singlePageForm": "doubleLine",
+    "listing": {
+      "name": "Table layout",
+      "description": "Select properties you want to manage for tables on react theme page listing.",
+      "config": {
+        "paginate": true,
+        "limitSetup": 10,
+        "dataCount": true,
+        "search": true,
+        "sorting": true,
+        "optionToEnable": true,
+        "rowSelection": true
+      }
+    },
+    "loader": "lazyLoading"
+  },
+  "actions": [
+    {
+      "category": "addEdit",
+      "attributes": [
+        {
+          "attrName": "username",
+          "label": "Username",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "password",
+          "label": "Password",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 1
+        },
+        {
+          "attrName": "email",
+          "label": "Email",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "name",
+          "label": "Names",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        },
+        {
+          "attrName": "role",
+          "label": "Role",
+          "inputType": "SelectWidget",
+          "type": "Number",
+          "enum": {
+            "User": 2,
+            "Admin": 1
+          }
+        }
+      ]
+    },
+    {
+      "category": "listing",
+      "attributes": [
+        {
+          "attrName": "username",
+          "label": "Username",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "email",
+          "label": "Email",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "name",
+          "label": "Names",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        },
+        {
+          "attrName": "isActive",
+          "label": "Is Active",
+          "inputType": "CheckboxWidget",
+          "type": "Boolean",
+          "sequence": 4
+        },
+        {
+          "attrName": "createdAt",
+          "label": "Created At",
+          "inputType": "DatePicker",
+          "type": "Date",
+          "sequence": 5
+        },
+        {
+          "attrName": "updatedAt",
+          "label": "Updated At",
+          "inputType": "DatePicker",
+          "type": "Date",
+          "sequence": 6
+        },
+        {
+          "attrName": "addedBy",
+          "label": "Added By",
+          "inputType": "RefWidget",
+          "type": "ObjectId",
+          "ref": "user",
+          "sequence": 7,
+          "valueAttribute": "_id",
+          "displayAttribute": "username"
+        },
+        {
+          "attrName": "updatedBy",
+          "label": "Updated By",
+          "inputType": "RefWidget",
+          "type": "ObjectId",
+          "ref": "user",
+          "sequence": 8,
+          "valueAttribute": "_id",
+          "displayAttribute": "password"
+        }
+      ]
+    },
+    {
+      "category": "detailView",
+      "attributes": [
+        {
+          "attrName": "username",
+          "label": "Username",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "email",
+          "label": "Email",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "name",
+          "label": "Names",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        },
+        {
+          "attrName": "isActive",
+          "label": "Is Active",
+          "inputType": "CheckboxWidget",
+          "type": "Boolean",
+          "sequence": 4
+        },
+        {
+          "attrName": "createdAt",
+          "label": "Created At",
+          "inputType": "DatePicker",
+          "type": "Date",
+          "sequence": 5
+        },
+        {
+          "attrName": "updatedAt",
+          "label": "Updated At",
+          "inputType": "DatePicker",
+          "type": "Date",
+          "sequence": 6
+        },
+        {
+          "attrName": "addedBy",
+          "label": "Added By",
+          "inputType": "RefWidget",
+          "type": "ObjectId",
+          "ref": "user",
+          "sequence": 7,
+          "valueAttribute": "_id",
+          "displayAttribute": "username"
+        },
+        {
+          "attrName": "updatedBy",
+          "label": "Updated By",
+          "inputType": "RefWidget",
+          "type": "ObjectId",
+          "ref": "user",
+          "sequence": 8,
+          "valueAttribute": "_id",
+          "displayAttribute": "password"
+        }
+      ]
+    }
+  ]
+}

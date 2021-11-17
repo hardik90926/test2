@@ -1,0 +1,221 @@
+.popupWrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.58%);
+  width: 100%;
+  z-index: 10000;
+  .customPopup {
+    transform: translate(-50%, -50%);
+    border: none;
+    // background: $dark-dropdown;
+    overflow: visible;
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    inset: 50% auto auto 50%;
+    .page-body {
+      min-height: auto;
+      background: $dark-body-background;
+    }
+  }
+  .customConfirmPopup {
+    transform: translate(-50%, -50%);
+    border: none;
+    background: $dark-body-background;
+    overflow: visible;
+    position: absolute;
+    margin: auto;
+    max-width: 500px;
+    inset: 50% auto auto 50%;
+    border-radius: 5px;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: $theme-body-font-color;
+    }
+    .drawerClose {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.datepicker .popover {
+  background: $dark-dropdown;
+  border: 1px solid #ddd;
+  box-shadow: $dark-box-shadow;
+  position: relative;
+  z-index: 1;
+}
+.datepicker .popover-header {
+  background: #fafafa;
+  padding: 6px 8px;
+}
+.viewBoxWrap {
+  padding: 15px;
+  overflow: auto;
+  height: 65vh !important;
+  color: $theme-body-font-color;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    transition: 0.3s;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-color;
+  }
+}
+.viewBox {
+  display: block;
+  margin-bottom: 10px;
+}
+.viewBox span {
+  font-size: 14px;
+  color: $theme-body-font-color;
+}
+.viewBox span:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.pageDetailView {
+  height: 100%;
+  // overflow: auto;
+  margin: 0 -15px;
+  padding: 0 15px;
+  .pageHead {
+    color: $theme-body-font-color;
+  }
+  .viewBoxWrap {
+    height: auto !important;
+    flex-shrink: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+    .viewBox {
+      margin-bottom: 16px;
+      span {
+        // display: block;
+      }
+    }
+  }
+}
+.h-0 {
+  height: 0;
+}
+// view data popup
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.dataBox {
+  width: 50%;
+  padding: 10px;
+}
+.dataList {
+  display: flex;
+  margin-bottom: 4px;
+}
+.dataList:last-child {
+  margin-bottom: 0;
+}
+.dataList .dataLabel {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 4px;
+  white-space: normal;
+  word-break: break-word;
+  color: $theme-body-font-color;
+}
+.dataList .dataValue {
+  display: block;
+  font-size: 14px;
+  // white-space: nowrap;
+  word-break: break-all;
+  color: $theme-body-font-color;
+}
+.dataBox .card {
+  background-color: $dark-card-background;
+  border: 1px solid $dark-border-200;
+}
+.link-btn {
+  color: $primary-color;
+  text-decoration: underline;
+}
+.w-full {
+  width: 100%;
+}
+.w-max-content {
+  width: max-content;
+}
+
+.popupCustom {
+  z-index: 10000;
+}
+.popupCustom .Popover-body {
+  /* background-color: var(--color-bg-popover); */
+  background: $dark-dropdown;
+  border: 1px solid $dark-border-100;
+  border-radius: 0 0 5px 5px;
+  box-shadow: $dark-box-shadow !important;
+  // padding: 20px;
+  max-width: 400px;
+}
+.Popover-tip {
+  fill: $dark-dropdown;
+}
+.popupCustom .Popover-body ol {
+  padding: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+.sucess-color {
+  color: $success;
+}
+.danger-color {
+  color: $danger;
+}
+.h-full {
+  height: 100%;
+}
+.btn.btn-light {
+  background: $white !important;
+  border: 1px solid $outline-border !important;
+  color: $theme-body-font-color !important;
+  &:hover {
+    background-color: $outline-hover !important;
+  }
+}
+.dashboard {
+  font-size: 32px;
+  font-weight: 500;
+  color: $theme-body-font-color;
+}
+
+.popupChild {
+  height: 80vh;
+  overflow: auto;
+}
+
+.listBox{
+  background-color: $dark-border-100;
+  padding: 6px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 14px;
+  .listBoxClose{
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+  }
+}
+.tagPopup{
+  min-height: 250px;
+  height: auto;
+}
